@@ -7,20 +7,56 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="container-nav">
+            <h1>Agus Purwadi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#book">Consultation</a></li>
+                    <li><a href="mailto:agusadi.im@gmail.com">Email</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <section id="thank-you">
-        <div class="container">
+        <div class="table-container">
             <h2>Thank You for Your Submission!</h2>
             <p>Your request has been successfully submitted. Please wait for our confirmation.</p>
 
-            <h3>Submitted Information:</h3>
-            <ul id="submitted-data">
-                <li><strong>Name:</strong> <span id="display-name"></span></li>
-                <li><strong>Company:</strong> <span id="display-company"></span></li>
-                <li><strong>Number of Employees:</strong> <span id="display-employees"></span></li>
-                <li><strong>Email:</strong> <span id="display-email"></span></li>
-                <li><strong>Phone:</strong> <span id="display-phone"></span></li>
-                <li><strong>Consultation Date:</strong> <span id="display-date"></span></li>
-            </ul>
+            <h3>Submitted Information</h3>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td id="display-name"></td>
+                </tr>
+                <tr>
+                    <td><strong>Company:</strong></td>
+                    <td id="display-company"></td>
+                </tr>
+                <tr>
+                    <td><strong>Number of Employees:</strong></td>
+                    <td id="display-employees"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td id="display-email"></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td id="display-phone"></td>
+                </tr>
+                <tr>
+                    <td><strong>Consultation Date:</strong></td>
+                    <td id="display-date"></td>
+                </tr>
+            </table>
 
             <a href="index.html" class="back-button">Back to Home</a>
         </div>
