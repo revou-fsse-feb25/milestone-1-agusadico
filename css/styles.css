@@ -30,63 +30,63 @@ body {
     padding: 0 20px;
 }
 
+/* Grid Layout untuk Intro Section */
 .container-2 {
-    width: 80%;
-    margin: 50px auto;
-    max-width: 1200px;
-    flex-direction: row;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: left;
 }
 
-img {
-    width: 350px;
+/* Styling for image */
+.container-img img {
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container-img {
-    display: flex; 
-    justify-content: center; 
-    height: auto;
-}
-
-.project-work {
-    width: 330px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-}
-
-hr {
-    margin: 10px 20px;
-}
-
-
-/* Description */
+/* Grid Layout for Desktop View */
 .description-box {
-    padding: 20px 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Text description */
+/* Styling untuk teks */
 .description-box p {
     font-size: 16px;
     color: #333;
     margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
 }
 
-/* Link description */
-.description-box a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
+.hr-top {
+    width: 60%;
+    max-width: 1200px;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
 }
 
-.description-box a:hover {
-    text-decoration: underline;
+/* Bottom HR Line */
+.hr-bottom {
+    width: 80vw;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 50px auto; 
 }
-
 
 /* Header */
 header {
@@ -97,7 +97,20 @@ header {
 
 header h1 {
     font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+header h1 a {
+    text-decoration: none;
+    color: #000000; /* Warna teks */
+    font-weight: bold;
+}
+
+header h1 a:hover {
+    text-decoration: none;
+    color: #005bb5;
+}
+
 
 nav ul {
     list-style: none;
@@ -110,6 +123,113 @@ nav a {
     color: #333;
     font-weight: bold;
 }
+
+nav a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+
+/* Responsive for Mobile */
+@media screen and (max-width: 1024px) {
+    .description-box {
+        display: flex !important;
+        flex-direction: column;
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .description-box div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description-box p {
+        text-align: left;
+    }
+
+    .container-2 {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: left; 
+        width: 90%;
+    }
+
+    .container-2 div {
+        width: 100%; 
+    }
+
+    .container-img {
+        order: 1; 
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-img img {
+        max-width: 300px; 
+    }
+
+    .container-form {
+        margin: 20px auto; 
+        padding: 20px;
+        width: 90%;
+    }
+
+    /*mobile nav*/
+    .container-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        color: #5a554f;
+        font-weight: normal;
+    }
+
+    nav ul li::before {
+        content: "•";
+        color: #5a554f;
+        margin: 0 5px;
+    }
+
+    nav ul li:first-child::before {
+        content: "";
+    }
+
+}
+
+img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-work {
+    width: 330px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+
+
 
 /* Intro */
 .intro {
@@ -134,6 +254,13 @@ nav a {
     margin-bottom: 20px;
 }
 
+.project-title {
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,12 +283,12 @@ article.project {
 .testimonial-list cite {
     font-weight: bold;
     display: flex;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 /* Styling Section */
 #contact {
-    padding: 50px 20px;
+    padding: 0 0 80px;
     background-color: #f9f9f9;
     text-align: center;
 }
@@ -209,7 +336,7 @@ input, select {
     border-radius: 5px;
 }
 
-/* Tombol Submit */
+/* Button Submit */
 button {
     background-color: #0073e6;
     color: white;
@@ -306,7 +433,6 @@ th:first-child, td:first-child {
     width: 20%; 
     white-space: nowrap;
 }
-
 
 /* Styling for cell data */
 td {
