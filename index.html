@@ -3,167 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agus Purwadi - Digital Marketing</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <!-- Primary Meta Tags -->
+    <title>Agus Purwadi - Expert Digital Marketer | Data-Driven Advertising Specialist</title>
+    <meta name="title" content="Agus Purwadi - Expert Digital Marketer | Data-Driven Advertising Specialist" />
+    <meta name="description" content="Agus Purwadi is a seasoned Digital Marketing Specialist from Indonesia, successfully managing 15+ clients with a 4.9/5 success rate. Helping brands scale and thrive with data-driven Google Ads, Meta Ads, TikTok Ads, Shopee Ads, and Tokopedia Ads strategies. Let's connect today!" />
 
-    <!-- Header with navigation -->
-    <header>
-        <div class="container-nav">
-            <h1><a href="index.html">Agus Purwadi</a></h1>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Agus Purwadi - Expert Digital Marketer | Data-Driven Advertising Specialist" />
+    <meta property="og:description" content="Agus Purwadi is a seasoned Digital Marketing Specialist from Indonesia, successfully managing 15+ clients with a 4.9/5 success rate. Helping brands scale and thrive with data-driven Google Ads, Meta Ads, TikTok Ads, Shopee Ads, and Tokopedia Ads strategies. Let's connect today!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+     
+    <title>Agus Purwadi - Digital Marketing</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold">
+                <a href="index.html" class="text-blue-800 hover:text-yellow-500">Agus Purwadi</a>
+            </h1>
+    
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none ml-auto">
+                &#9776; <!-- Unicode for three stripes (hamburger menu) -->
+            </button>
+    
+            <!-- Desktop Navigation -->
             <nav>
-                <ul>
-                    <li><a href="#work">Portfolio</a></li>
-                    <li><a href="#book">Consultation</a></li>
-                    <li><a href="mailto:agusadi.im@gmail.com">Email</a></li>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#about-me" class="hover:text-blue-500">About Me</a></li>
+                    <li><a href="#work" class="hover:text-blue-500">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                    <li><a href="mailto:agusadi.im@gmail.com" class="hover:text-blue-500">Email</a></li>
                 </ul>
             </nav>
+        </div>
+    
+        <!-- Mobile Dropdown Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-5 shadow-md">
+            <ul class="space-y-4 text-center">
+                <li><a href="#about-me" class="block hover:text-blue-500">About Me</a></li>
+                <li><a href="#work" class="block hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="block hover:text-blue-500">Contact</a></li>
+                <li><a href="mailto:agusadi.im@gmail.com" class="block hover:text-blue-500">Email</a></li>
+            </ul>
         </div>
     </header>
+    
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+    
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden"); // Toggle visibility
+            mobileMenu.classList.toggle("block"); // Ensure it appears when toggled
+        });
+    </script>
+    
+    
 
     <!-- Main Content -->
-    <main>
-        <!-- Intro section -->
-        <section class="intro">
-            <div class="container-2">
-                <div>
-                    <hr class="hr-top">
-                    <h2>The Digital Marketing Expert Ready to Elevate Your Brand’s Success.</h2>
-                     <p>I'm Agus, a seasoned Digital Marketing Specialist from Indonesia, helping businesses scale and thrive through data-driven advertising strategies.</p>
+    <main class="container mx-auto p-6 mt-24">
+        <section class="relative rounded-lg max-w-full mx-auto">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30"></div>
+        
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-6">
+                <!-- Profile Info Card -->
+                <div class="bg-white p-8 sm:p-12 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 
+                w-full sm:w-11/12 md:w-3/5 lg:flex-1">
+                    <h2 class="text-3xl font-bold text-black">The Digital Marketing Expert Ready to Elevate Your Brand’s Success.</h2>
+                    <p class="text-gray-500 mt-1"><i class="fa-solid fa-medal"></i> Successfully managed 12+ clients with an outstanding <i class="fa-solid fa-star"></i> 4.9/5 success rate</p>
+                    <p class="text-gray-500 mt-1"><i class="fa-solid fa-location-dot"></i> Bekasi, Jawa Barat 17320 </p>
+                    
+                    <p class="text-gray-700 mt-4">
+                        I'm Agus, a seasoned Digital Marketing Specialist from Indonesia, helping businesses scale and thrive through data-driven advertising strategies.
+                    </p>
+                    <div class="text-center mt-4">
+                        <button class="relative overflow-hidden mt-4 bg-blue-800 text-white px-5 py-2 rounded-lg shadow 
+                        transition-all duration-300 ease-in-out hover:text-gray-900
+                        before:absolute before:top-0 before:left-0 before:w-0 before:h-full 
+                        before:bg-yellow-400 before:transition-all before:duration-300 before:ease-in-out 
+                        hover:before:w-full">
+                            <a href="#contact" class="relative z-10">
+                                Let's Connect!
+                            </a>    
+                        </button>
+                    </div>
+        
+                    <!-- Social Media Icons -->
+                    <div class="mt-4 flex justify-center space-x-4 text-gray-600">
+                        <a href="https://www.facebook.com/agusadi.seo" class="hover:text-blue-700"><i class="fab fa-facebook fa-xl"></i></a>
+                        <a href="https://www.youtube.com/@agusadidm" class="hover:text-red-600"><i class="fab fa-youtube fa-xl"></i></a>
+                        <a href="https://github.com/agusadico" class="hover:text-gray-800"><i class="fab fa-github fa-xl"></i></a>
+                        <a href="https://www.instagram.com/agusadidm/" class="hover:text-purple-500"><i class="fab fa-instagram fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/agus-purwadi/" class="hover:text-blue-400"><i class="fab fa-linkedin fa-xl"></i></a>
+                    </div>
                 </div>
-                <div class="container-img">
-                     <img src="images/agus-pp.jpg" alt="agus-purwadi-pp">
-                </div>
-            </div>
-            <hr class="hr-bottom">
-            <div class="description-box">
-                <div>
-                    <p>For over 5 years, I’ve been helping businesses and brands scale through high-performance digital marketing strategies. From Google Ads and Meta Ads to TikTok Ads and E-commerce advertising, I’ve successfully driven results across multiple industries and <a href="#work">everything in between</a>.</p>
-                    <p>With a strong background in data-driven marketing, I thrive on creating campaigns that deliver high ROI and business growth. I specialize in performance marketing, AI-driven ad optimization, and audience targeting, ensuring every ad spend generates maximum impact.</p>
-                </div>
-            
-                <div>
-                    <p>As a <strong>Digital Marketer</strong>, I handle everything from market research and ad creation to conversion tracking and analytics, optimizing every step for success.</p>
-                    <p>So whether you’re an emerging brand looking for visibility or an established business aiming to scale, I’m here to help you take your marketing efforts to the next level.</p>
-                    <p>Want to grow your business? → <a href="mailto:agusadi.im@gmail.com">Send me an email</a></p>
-                </div>
-            </div>                       
-        </section>
-
-        <!-- Project & Work Section -->
-        <section class="projects" id="work">
-            <div class="container">
-                <h2>Recent Projects & Work</h2>
-                <div class="project-list">
-                    <article class="project">
-                        <h3 class="project-title">IDwebhost</h3>
-                        <div class="container-img">
-                            <img src="images/idwebhost.jpg" alt="Project IDwebhost" class="project-work">
-                        </div>
-                        <p>📍 Yogyakarta | Web Hosting & SaaS</p>
-                        <p>🚀 Acquired 2,400+ new clients</p>
-                        <p>💰 Generated IDR 1.15B+ revenue in 6 months</p>
-                    </article>
-                    <article class="project">
-                        <h3 class="project-title">HashMicro</h3>
-                        <div class="container-img">
-                            <img src="images/hashmicro.jpg" alt="Project HashMicro" class="project-work">
-                        </div>
-                        <p>📍 Jakarta | ERP & SaaS Solutions</p>
-                        <p>🚀 Increased revenue by IDR 3.2B+ in 6 months</p>
-                        <p>🎯 Achieved through targeted digital marketing strategies</p>
-                    </article>
-                    <article class="project">
-                        <h3 class="project-title">Koding Next</h3>
-                        <div class="container-img">
-                            <img src="images/kodingnext.jpg" alt="Project Koding Next" class="project-work">
-                        </div>
-                        <p>📍 Jakarta | Coding School for Kids & Teens</p>
-                        <p>🚀 Acquired 3,000+ new clients</p>
-                        <p>💰 Generated IDR 2.4B+ revenue in 6 months</p>
-                    </article>
+        
+                <!-- Profile Picture -->
+                <div class="relative w-full sm:w-11/12 md:w-2/5 lg:w-1/3"">
+                    <img src="images/agusp.jpg" alt="Your Profile Picture" 
+                        class="rounded-lg shadow-md object-cover border-x-8 border-y-8 border-white md:-ml-10 transition-all duration-300 ease-in-out hover:border-blue-600 hover:shadow-lg transform hover:scale-105">
                 </div>
             </div>
         </section>
-
-        <!-- Testimoni -->
-        <section class="testimonials">
-            <div class="container">
-                <h2>What Clients Say</h2>
-                <div class="testimonial-list">
-                    <blockquote>
-                        <p>"Working with Agus was a great experience. The work was delivered neatly and efficiently, making a significant impact on our team’s workflow."</p>
-                        <cite>— Ali Fauzi, Koding Next</cite>
-                    </blockquote>
-                    <blockquote>
-                        <p>"SEO and SEM campaigns hit the target successfully. His insights and recommendations were incredibly valuable for our marketing strategy."</p>
-                        <cite>— Dias Mahendra, HashMicro</cite>
-                    </blockquote>
-                    <br>
+        
+        <h2 class="text-3xl font-bold text-center mt-24">Experience</h2>
+        <section class="bg-white p-8 rounded-lg shadow-md mt-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800" id="about-me">
+                <!-- Left Column -->
+                <div>
+                    <p>
+                        For over 5 years, I’ve been helping businesses and brands scale through high-performance digital marketing strategies.
+                        From <strong>Google Ads, Meta Ads, TikTok Ads, and E-commerce advertising</strong>, I’ve successfully driven results across 
+                        multiple industries and <a href="#work" class="text-blue-500 hover:underline">everything in between</a>.
+                    </p>
+                    <p class="mt-3">
+                        With a strong background in <strong>data-driven marketing</strong>, I thrive on creating campaigns that deliver high ROI and 
+                        business growth. I specialize in <strong> performance marketing, AI-driven ad optimization, and audience targeting</strong>
+                        ensuring every ad spend generates maximum impact.
+                    </p>
+                </div>
+        
+                <!-- Right Column -->
+                <div>
+                    <p>
+                        As a <strong>Digital Marketer</strong>, I handle everything from market research and ad creation to conversion tracking 
+                        and analytics, optimizing every step for success.
+                    </p>
+                    <p class="mt-3 font-semibold">
+                        Want to grow your business? → 
+                        <a href="mailto:agusadi.im@gmail.com" class="text-blue-600 hover:underline">Send me an email</a>
+                    </p>
                 </div>
             </div>
-            <hr class="hr-bottom">
         </section>
+        
+<!-- Projects Section -->
+<section id="work" class="mt-24">
+    <h2 class="text-3xl font-bold text-center mb-6">Recent Projects & Work</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-800 text-center">IDwebhost</h3>
+            <img src="images/idwebhost.jpg" alt="IDwebhost" class="rounded-lg mt-3 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <p class="text-gray-700 mt-2"><i class="fa-solid fa-location-dot"></i> Yogyakarta | Web Hosting & SaaS</p>
+            <p><i class="fa-solid fa-medal"></i> Acquired 2,400+ new clients</p>
+            <p><i class="fa-solid fa-money-check-dollar"></i> Revenue: IDR 1.15B+ in 6 months</p>
+        </article>
 
-        <!-- Form Section -->
-        <section id="contact">
-            <div class="container-form" id="book">
-                <h2>Free Booking Consultation</h2>
-                <p>Fill out the form below to schedule a free consultation with me.</p>
-        
-                <form action="thank-you.html" method="GET">
-                    <!-- Name -->
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
-        
-                    <!-- Company -->
-                    <label for="company">Company / Organization</label>
-                    <input type="text" id="company" name="company" required placeholder="Your company or organization name">
-        
-                    <!-- Number of Employees -->
-                    <label for="employees">Number of Employees</label>
-                    <select id="employees" name="employees" required>
-                        <option value="" disabled selected>Select number of employees</option>
-                        <option value="1-10">1 - 10</option>
-                        <option value="11-50">11 - 50</option>
-                        <option value="51-100">51 - 100</option>
-                        <option value="101-500">101 - 500</option>
-                        <option value="500+">500+</option>
-                    </select>
-        
-                    <!-- Email -->
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
-        
-                    <!-- Phone Number -->
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
-        
-                    <!-- Booking Date -->
-                    <label for="date">Select a Consultation Date</label>
-                    <input type="date" id="date" name="date" required>
-        
-                    <!-- Submit Button -->
-                    <button type="submit">Submit Request</button>
-                </form>
-            </div>
-        </section>        
-    </main>
+        <article class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-800 text-center">HashMicro</h3>
+            <img src="images/hashmicro.jpg" alt="HashMicro" class="rounded-lg mt-3 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <p class="text-gray-700 mt-2"><i class="fa-solid fa-location-dot"></i> Jakarta | ERP & SaaS Solutions</p>
+            <p><i class="fa-solid fa-medal"></i> Achieved through targeted digital marketing strategies</p>
+            <p><i class="fa-solid fa-money-check-dollar"></i> Increased revenue by IDR 3.2B+ in 6 months</p>
+        </article>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Agus Purwadi</p>
-            <nav aria-label="Footer Navigation">
-                <ul class="social-links">
-                    <!-- <li><a href="#">instagram</a></li> -->
-                    <li><a href="https://github.com/agusadico" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/agus-purwadi/" target="_blank">linkedin</a></li>
-                </ul>
-            </nav>
+        <article class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-blue-800 text-center">Koding Next</h3>
+            <img src="images/kodingnext.jpg" alt="Koding Next" class="rounded-lg mt-3 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <p class="text-gray-700 mt-2"><i class="fa-solid fa-location-dot"></i> Jakarta | Coding School for Kids & Teens</p>
+            <p><i class="fa-solid fa-medal"></i> Acquired 3,000+ new clients</p>
+            <p><i class="fa-solid fa-money-check-dollar"></i> Revenue: IDR 2.4B+ in 6 months</p>
+        </article>
+    </div>
+</section>
+
+<h2 class="text-3xl font-bold text-center m-8 mt-24">Other Happy Clients</h2>
+<section class="p-10 mt-12 rounded-lg shadow-md bg-white">
+    <div class="overflow-hidden relative">
+        <div class="flex space-x-12 animate-scroll">
+            <img src="images/logo-clients/logo-client-1.jpg" alt="Brand 1" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-2.jpg" alt="Brand 2" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-3.jpg" alt="Brand 3" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-4.jpg" alt="Brand 4" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-5.jpg" alt="Brand 5" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-6.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-7.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-8.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-9.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-10.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-11.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-12.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-13.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-14.jpg" alt="Brand 6" class="h-16 w-auto">
+            <img src="images/logo-clients/logo-client-15.jpg" alt="Brand 6" class="h-16 w-auto">
         </div>
-    </footer>
+    </div>
+</section>
 
+
+<section class="p-12 bg-white mt-24 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+    <div class="container mx-auto px-2 sm:px-6 md:px-12">
+        <!-- 3 Columns Grid Layout -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            
+            <!-- Left Side: "What We Do" Box -->
+            <div class="bg-blue-800 text-white p-8 rounded-lg">
+                <h2 class="text-3xl font-bold uppercase">WHAT CAN I DO</h2>
+                <p class="mt-4 text-lg leading-relaxed">
+                    I always use data and real-world insights as the foundation for every strategic step, ensuring the most effective approach to achieving your brand’s goals.
+                </p>
+            </div>
+
+            <!-- Column 2: Performance Ad Marketing -->
+            <div class="flex flex-col w-full">
+                <div class="flex items-center justify-between w-full px-2">
+                    <div class="bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-bullhorn text-2xl"></i>
+                    </div>
+                    <p class="text-lg font-bold text-gray-600">01</p>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Performance Ad Marketing</h3>
+                <p class="text-gray-600 mt-1">
+                    I specialize in running high-converting ads across Google Ads, Meta Ads, TikTok Ads, Shopee Ads, and Tokopedia Ads. By leveraging advanced targeting, data-driven optimization, and AI-powered strategies, I help brands maximize their ad performance and exceed revenue expectations.
+                </p>
+            </div>
+            
+
+            <!-- Column 3: Content Ad Performance -->
+            <div class="flex flex-col">
+                <div class="flex items-center justify-between w-full px-2">
+                    <div class="bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-chart-line text-2xl"></i>
+                    </div>
+                    <p class="text-lg font-bold text-gray-600">02</p>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Content Ad Performance</h3>
+                <p class="text-gray-600 mt-1">
+                    I create compelling advertising content that enhances your brand’s messaging, ensuring clarity, engagement, and stronger audience connection. Every piece of content is crafted to drive conversions while maintaining brand consistency.
+                </p>
+            </div>
+
+            <!-- Row 2: 3 Columns Below -->
+            <div class="flex flex-col">
+                <div class="flex items-center justify-between w-full px-2">
+                    <div class="bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-lightbulb text-2xl"></i>
+                    </div>
+                    <p class="text-lg font-bold text-gray-600">03</p>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Digital Marketing Strategy & Funnel Planning</h3>
+                <p class="text-gray-600 mt-1">
+                    I develop end-to-end digital marketing strategies that guide your audience from awareness to purchase. Using data-driven funnel planning, I optimize each stage to boost engagement, maximize ROI, and drive sustainable growth.
+                </p>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="flex items-center justify-between w-full px-2">
+                    <div class="bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-palette text-2xl"></i>
+                    </div>
+                    <p class="text-lg font-bold text-gray-600">04</p>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Brand Identity Guidelines</h3>
+                <p class="text-gray-600 mt-1">
+                    I help brands establish a strong, consistent identity through comprehensive brand guidelines, covering everything from logos, colors, fonts, and visuals to the tone of voice that resonates with their audience.
+                </p>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="flex items-center justify-between w-full px-2">
+                    <div class="bg-blue-800 text-white w-14 h-14 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-desktop text-2xl"></i>
+                    </div>
+                    <p class="text-lg font-bold text-gray-600">05</p>
+                </div>
+                <h3 class="text-lg font-bold mt-2">Landing Page Implementation</h3>
+                <p class="text-gray-600 mt-1">
+                    I design and optimize landing pages that are not only visually appealing but also strategically built for conversions. Every element—from layout to call-to-action—is optimized to enhance user experience and drive more sales.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="max-w-3xl mx-auto mt-24 bg-white p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
+    <h2 class="text-3xl font-bold text-center">Free Booking Consultation</h2>
+    <p class="text-center text-gray-600 mt-2">Fill out the form below to schedule a free consultation.</p>
+
+    <!-- Form Wrapper with max width -->
+    <div class="max-w-xl mx-auto mt-6">
+        <form action="thank-you.html" method="GET">
+            
+            <!-- Full Name -->
+            <label class="block font-semibold">Full Name</label>
+            <input type="text" name="name" required placeholder="Enter your full name" 
+                class="w-full p-3 border rounded-lg mt-2">
+
+            <!-- Company Name -->
+            <label class="block font-semibold mt-4">Company Name</label>
+            <input type="text" name="company" required placeholder="Enter your company name" 
+                class="w-full p-3 border rounded-lg mt-2">
+
+            <!-- Company Size (Dropdown) -->
+            <label class="block font-semibold mt-4">Company Size</label>
+            <select name="employees" required class="w-full p-3 border rounded-lg mt-2">
+                <option value="" disabled selected>Select company size</option>
+                <option value="1-10">1 - 10 employees</option>
+                <option value="11-50">11 - 50 employees</option>
+                <option value="51-100">51 - 100 employees</option>
+                <option value="101-500">101 - 500 employees</option>
+                <option value="500+">500+ employees</option>
+            </select>
+
+            <!-- Email Address -->
+            <label class="block font-semibold mt-4">Email Address</label>
+            <input type="email" name="email" required placeholder="Enter your email" 
+                class="w-full p-3 border rounded-lg mt-2">
+
+            <!-- Phone Number -->
+            <label class="block font-semibold mt-4">Phone Number</label>
+            <input type="text" name="phone" required placeholder="Enter your phone number" 
+                class="w-full p-3 border rounded-lg mt-2">
+
+            <!-- Consultation Date -->
+            <label class="block font-semibold mt-4">Consultation Date</label>
+            <input type="datetime-local" name="date" required 
+                class="w-full p-3 border rounded-lg mt-2">
+
+            <!-- Submit Button -->
+            <!-- <button type="submit" class="mt-6 w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700"> -->
+                <button type="submit" class="mt-6 w-full relative overflow-hidden mt-4 bg-blue-800 text-white px-5 py-2 rounded-lg shadow 
+                transition-all duration-300 ease-in-out hover:text-gray-900
+                before:absolute before:top-0 before:left-0 before:w-0 before:h-full 
+                before:bg-yellow-400 before:transition-all before:duration-700 before:ease-in-out 
+                hover:before:w-full">
+                <span class="relative z-10">Submit Request</span>
+            </button>
+        </form>
+    </div>
+
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-300 p-6 mt-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <!-- Left: Logo + Brand Name -->
+        <div class="flex items-center space-x-3">
+            <span class="text-lg font-semibold text-gray-900 logo-text-style">Agus Purwadi</span>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <nav class="flex space-x-6 mt-4 md:mt-0 text-gray-600">
+            <a href="#about-me" class="block hover:text-blue-500">About Me</a>
+            <a href="#work" class="block hover:text-blue-500">Projects</a>
+            <a href="#contact" class="block hover:text-blue-500">Contact</a>
+            <a href="mailto:agusadi.im@gmail.com" class="block hover:text-blue-500">Email</a>
+        </nav>
+    </div>
+
+    <!-- Bottom: Copyright -->
+    <div class="text-center text-gray-500 text-sm mt-4">
+        &copy; 2025 Agus Purwadi. All Rights Reserved.
+        <div class="mt-3">
+            <a href="https://github.com/agusadico" class="mr-4 hover:text-blue-400">"><i class="fab fa-github fa-xl"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/agus-purwadi/" class="hover:text-blue-400"><i class="fab fa-linkedin fa-xl"></i> LinkedIn</a>
+        </div>
+    </div>   
+</footer>
 </body>
 </html>

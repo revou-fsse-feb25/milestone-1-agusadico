@@ -4,64 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <!-- Header with navigation -->
-    <header>
-        <div class="container-nav">
-            <h1><a href="index.html">Agus Purwadi</a></h1>
-            <!-- <nav>
-                <ul>
-                    <li><a href="#work">Portfolio</a></li>
-                    <li><a href="#book">Consultation</a></li>
-                    <li><a href="mailto:agusadi.im@gmail.com">Email</a></li>
-                </ul>
-            </nav> -->
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-2xl font-bold">
+                <a href="index.html" class="text-blue-800 hover:text-yellow-500">Agus Purwadi</a>
+            </h1>
         </div>
-    </header>
+</header>
 
-    <section id="thank-you">
-        <div class="table-container">
-            <h2>Thank You for Your Submission!</h2>
-            <p>Your request has been successfully submitted. Please wait for our confirmation.</p>
+    <!-- Thank You Section -->
+    <section id="thank-you" class="flex justify-center items-center min-h-screen px-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg text-center">
+            <h2 class="text-3xl font-bold text-blue-800">Thank You for Your Submission!</h2>
+            <p class="text-gray-700 mt-3">Your request has been successfully submitted. Please wait for our confirmation.</p>
 
-            <h3>Submitted Information</h3>
-            <table>
-                <tr>
-                    <th>Field</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td><strong>Name:</strong></td>
-                    <td id="display-name"></td>
-                </tr>
-                <tr>
-                    <td><strong>Company:</strong></td>
-                    <td id="display-company"></td>
-                </tr>
-                <tr>
-                    <td><strong>Number of Employees:</strong></td>
-                    <td id="display-employees"></td>
-                </tr>
-                <tr>
-                    <td><strong>Email:</strong></td>
-                    <td id="display-email"></td>
-                </tr>
-                <tr>
-                    <td><strong>Phone:</strong></td>
-                    <td id="display-phone"></td>
-                </tr>
-                <tr>
-                    <td><strong>Consultation Date:</strong></td>
-                    <td id="display-date"></td>
-                </tr>
-            </table>
+            <!-- Submitted Information -->
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-gray-800">Submitted Information</h3>
+                <table class="w-full mt-4 border border-gray-300">
+                    <tbody class="divide-y divide-gray-300">
+                        <tr class="bg-gray-100">
+                            <td class="p-3 font-semibold text-left">Name:</td>
+                            <td id="display-name" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-left">Company:</td>
+                            <td id="display-company" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="p-3 font-semibold text-left">Number of Employees:</td>
+                            <td id="display-employees" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-left">Email:</td>
+                            <td id="display-email" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="p-3 font-semibold text-left">Phone:</td>
+                            <td id="display-phone" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-left">Consultation Date:</td>
+                            <td id="display-date" class="p-3 text-gray-700 text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <a href="index.html" class="back-button">Back to Home</a>
+            <!-- Back Button -->
+            <a href="index.html" class="mt-6 inline-block relative overflow-hidden mt-4 bg-blue-800 text-white px-5 py-2 rounded-lg shadow 
+            transition-all duration-300 ease-in-out hover:text-gray-900
+            before:absolute before:top-0 before:left-0 before:w-0 before:h-full 
+            before:bg-yellow-400 before:transition-all before:duration-300 before:ease-in-out 
+            hover:before:w-full">
+                 <span class="relative z-10">Back to Home</span>    
+            </a>
         </div>
     </section>
 
     <script src="js/script.js"></script>
+
+    <footer class="bg-white text-gray-900 text-center p-4 mt-10 flex flex-col items-center">
+        <div class="flex justify-center items-center">
+            <span class="text-lg font-semibold text-gray-900 logo-text-style">Agus Purwadi</span>
+        </div>
+        <p class="mt-2">&copy; 2025 Agus Purwadi. All Rights Reserved.</p>
+        <div class="mt-3">
+            <a href="https://github.com/agusadico" class="mr-4 hover:text-blue-400">"><i class="fab fa-github fa-xl"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/agus-purwadi/" class="hover:text-blue-400"><i class="fab fa-linkedin fa-xl"></i> LinkedIn</a>
+        </div>
+    </footer>      
 </body>
 </html>
