@@ -1,4 +1,4 @@
-# 🚀 Agus Purwadi - Personal Portfolio Website  
+# Agus Purwadi - Personal Portfolio Website  
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-blue?style=for-the-badge)](https://revou-fsse-feb25.github.io/milestone-1-agusadico/)  
 
